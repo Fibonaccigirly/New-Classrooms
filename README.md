@@ -206,6 +206,7 @@ Note: Ensuring consistency in location information will prevent confusion for us
 
 
 Automated Testing Project
+
 This project focuses on automating the "Contact Us" form on the homepage using Selenium in Visual Studio Code with Python.
 
 Stack Used:
