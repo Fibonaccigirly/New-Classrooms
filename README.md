@@ -210,42 +210,49 @@ Automated Testing Project
 This project focuses on automating the "Contact Us" form on the homepage using Selenium in Visual Studio Code with Python.
 
 Stack Used:
-Selenium WebDriver
-Visual Studio Code (VS Code)
-Python 3.12.0
+
+- Selenium WebDriver
+- Visual Studio Code (VS Code)
+- Python 3.12.0
+- 
 Instructions for Running the Project:
+
 Prerequisites:
-Ensure you have Python installed on your machine. You can download it here.
-Install the necessary Python packages using the following command in your terminal:
-Copy code
+- Ensure you have Python installed on your machine. You can download it here.
+- Install the necessary Python packages using the following command in your terminal:
+
 pip install selenium
+
 Running the Automated Tests:
+
 To run the automated tests on your local machine, follow these instructions:
 
-Clone the Repository:
+1. Clone the Repository:
 
-bash
-Copy code
 git clone https://github.com/your-username/your-repository.git
 cd your-repository
-Open the Project in Visual Studio Code:
 
-css
-Copy code
+2. Open the Project in Visual Studio Code:
+
 code .
-Run the Automated Tests:
 
-Open the Python script containing your automated tests (e.g., contact_us_test.py) in VS Code.
-Execute the script by using the VS Code debugger or running the following command in the terminal:
-Copy code
+3. Run the Automated Tests:
+
+- Open the Python script containing your automated tests (e.g., contact_us_test.py) in VS Code.
+- Execute the script by using the VS Code debugger or running the following command in the terminal:
+
 python contact_us_test.py
-View Test Results:
 
-The terminal will display the progress and results of the automated tests.
-Any encountered errors or exceptions will be logged for further analysis.
+4. View Test Results:
+
+- The terminal will display the progress and results of the automated tests.
+- Any encountered errors or exceptions will be logged for further analysis.
+
 Notes:
-Make sure to have the appropriate web drivers (e.g., ChromeDriver) in your system PATH or provide the path explicitly in your script.
-Adjust the script according to your file structure and naming conventions.
+
+- Make sure to have the appropriate web drivers (e.g., ChromeDriver) in your system PATH or provide the path explicitly in your script.
+- Adjust the script according to your file structure and naming conventions.
+
 By following these instructions, you should be able to run the automated tests successfully on your local machine.
 
 Conclusion
