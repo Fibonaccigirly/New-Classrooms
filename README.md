@@ -221,7 +221,7 @@ Prerequisites:
 - Ensure you have Python installed on your machine. You can download it here: https://www.python.org/downloads/
 - Install the necessary Python packages using the following command in your terminal:
 
-pip install selenium
+%pip install selenium
 
 Running the Automated Tests:
 
