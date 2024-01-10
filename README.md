@@ -25,6 +25,7 @@ For this project, I opted to use Selenium IDE with Python 3.12.0 for several rea
 By choosing Selenium IDE with Python 3.12.0, I aimed to leverage a toolset that not only facilitates efficient test automation but also aligns with the specific needs and goals of this testing project.
 
 Test Case Development
+
 The test cases were created to address a crucial user interaction on the homepage: completing the "Contact Us" form. The primary objective of these automated tests is to simulate user behavior, ensuring that the form is filled out, submitted, and validating the successful completion of the form submission. Additionally, the tests aim to assess the application's response to various scenarios, including the correct and graceful error handling. 
 The test cases cover a diverse range of scenarios, including:
 - Navigation to the Homepage: Ensure the automated script navigates to the homepage successfully, setting the stage for the "Contact Us" form interaction.
