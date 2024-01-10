@@ -229,8 +229,8 @@ To run the automated tests on your local machine, follow these instructions:
 
 1. Clone the Repository:
 
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+git clone https://github.com/Fibonaccigirly/New-Classrooms.git
+cd New-Classrooms
 
 2. Open the Project in Visual Studio Code:
 
@@ -241,7 +241,7 @@ code .
 - Open the Python script containing your automated tests (e.g., contact_us_test.py) in VS Code.
 - Execute the script by using the VS Code debugger or running the following command in the terminal:
 
-python contact_us_test.py
+python NewClassroomsBookerTest.py
 
 4. View Test Results:
 
