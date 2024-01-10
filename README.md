@@ -1,10 +1,13 @@
 Restful Booker Automated Testing
 
 Introduction
+
 This repository contains automated tests for a portion of the Restful Booker application. The purpose of these tests is to validate the application against specified requirements using End-to-End (E2E) testing. This README provides essential information about what was tested, how it was tested, any bugs found, and instructions on running the automated tests.
 
 What Was Tested and How
+
 Scope of Testing
+
 I would normally approach the automation of booking tests by incorporating a data-driven approach, encompassing various start dates and durations. The automated tests would be designed to extract essential information, such as the number of nights and associated costs, from the screen. The goal would be to validate that the feature performs its intended function across diverse date ranges and data input.  
 However, considering the substantial number of bugs uncovered during testing, along with the complexities of multi-selecting dates within the calendar, I made a deliberate decision to prioritize the automation of a fundamental scenario within the Booking Creation process. Additionally, in response to your specific requirement, a significant portion of my focus was dedicated to creating an automated test that completes the "Contact Us" form on the homepage.
 The automation script, implemented in Python with Selenium, performs the following key steps:
@@ -16,6 +19,7 @@ This test not only demonstrates the capability to automate critical functionalit
 The decision to focus on the "Contact Us" form allows for a more targeted approach. This strategic choice is driven by the current state of the features, with identified bugs influencing the decision not to conduct comprehensive automation at this stage. By prioritizing the "Contact Us" form and fundamental scenarios, this strategy aims to address critical aspects of the application while postponing broader automation efforts until the identified bugs are resolved. This methodological decision is rooted in the aim to balance the benefits of automation with the imperative for a stable foundation. It ensures that automated tests provide reliable results, contributing to a more robust and effective testing process as the features evolve.
 
 Testing Tools and Framework
+
 For this project, I opted to use Selenium IDE with Python 3.12.0 for several reasons:
 - Ease of Use: Selenium IDE provides a user-friendly, record-and-playback interface that simplifies test script creation. This is particularly advantageous for quick test development and debugging.
 - Python 3.12.0 Compatibility: Python is a versatile and widely-used programming language. The compatibility of Selenium IDE with Python 3.12.0 allows for leveraging the strengths of Python, such as readability and a vast array of libraries, in the testing process.
@@ -27,6 +31,7 @@ By choosing Selenium IDE with Python 3.12.0, I aimed to leverage a toolset that 
 Test Case Development
 
 The test cases were created to address a crucial user interaction on the homepage: completing the "Contact Us" form. The primary objective of these automated tests is to simulate user behavior, ensuring that the form is filled out, submitted, and validating the successful completion of the form submission. Additionally, the tests aim to assess the application's response to various scenarios, including the correct and graceful error handling. 
+
 The test cases cover a diverse range of scenarios, including:
 - Navigation to the Homepage: Ensure the automated script navigates to the homepage successfully, setting the stage for the "Contact Us" form interaction.
 - Form Completion with Various Inputs: Utilizing variations in the form data, including different name inputs, email addresses, and messages, the script fills out the "Contact Us" form. This step aims to encompass diverse scenarios, ensuring the resilience of the form to various inputs.
@@ -37,6 +42,7 @@ The test cases cover a diverse range of scenarios, including:
 By incorporating test cases with bad data and no data, the testing strategy extends to cover potential edge cases and error scenarios, contributing to a more thorough validation of the "Contact Us" form's functionality and user experience on the homepage.
 
 Bugs Found
+
 Bug Report 1: Unintuitive Room Booking Process
 Summary: The process of booking a room is unintuitive.
 Steps to Reproduce:
@@ -124,9 +130,9 @@ Screenshot Taken: <img width="659" alt="BugReportTen" src="https://github.com/Fi
 Bug Report 11: Inconsistent and Non-Specific Field Length Error Messages
 Summary: Error messages for field length do not provide specific information, and there is a discrepancy between the documented requirements and the actual behavior for the First Name field.
 Steps to Reproduce:
-Enter data into the name, email, and phone fields.
-Intentionally provide data that does not meet the length requirements for the First Name field.
-Observe the error messages.
+1. Enter data into the name, email, and phone fields.
+2. Intentionally provide data that does not meet the length requirements for the First Name field.
+3. Observe the error messages.
 Expected Behavior: Error messages should clearly indicate which field has a length issue and match the documented length requirements.
 Actual Behavior: Error messages, such as "size must be between 3 and 18," are not specific about which field is causing the problem. The documented requirements for the First Name field specify a range of 3 to 20 characters. However, it appears that the First Name field only accepts up to 18 characters.
 Discrepancy with Documentation:
@@ -149,8 +155,8 @@ Note: Despite the incorrect message, the actual booking correctly reflects the a
 Bug Report 13: Ability to Select and Book Dates in the Past
 Summary: The system allows users to select and book dates in the past.
 Steps to Reproduce:
-Navigate to the date selection section for booking.
-Attempt to select and book dates that are in the past.
+1. Navigate to the date selection section for booking.
+2. Attempt to select and book dates that are in the past.
 Expected Behavior: The system should prevent users from selecting and booking dates that have already passed.
 Actual Behavior: Users are able to select and book dates that are in the past.
 Note: Ensure that the system validates and restricts the selection of dates to the current date or any future dates. Users should not be able to book accommodations for dates that have already occurred.
@@ -159,8 +165,8 @@ Note: Ensure that the system validates and restricts the selection of dates to t
 Bug Report 14: Missing Requirement Information for Message Field
 Summary: The Message field lacks information about the character count requirement (between 20 and 2000 characters), leading to form submission failures without prior notification.
 Steps to Reproduce:
-Navigate to the form containing the Message field.
-Enter all required data 
+1. Navigate to the form containing the Message field.
+2. Enter all required data 
 Attempt to submit a message that does not meet the length requirements.
 Expected Behavior: Users should be informed about the character count requirement for the Message field before attempting to submit the form.
 Actual Behavior: The system does not provide information to users about the required character count range (20 to 2000) for the Message field. As a result, form submission fails without prior notification, leading to an error message.
@@ -170,8 +176,8 @@ Note: It is recommended to add a clear instruction or message near the Message f
 Bug Report 15: Lack of User Notification for Phone Number Length Requirement
 Summary: The phone number field lacks information about the requirement for an 11-digit number, and users are only informed of the requirement after submitting the form.
 Steps to Reproduce:
-Navigate to the form containing the phone number field.
-Enter a phone number with a length other than 11 digits.
+1. Navigate to the form containing the phone number field.
+2. Enter a phone number with a length other than 11 digits.
 Submit the form.
 Expected Behavior: Users should be notified about the 11-digit requirement for the phone number field before attempting to submit the form.
 Actual Behavior: The system does not provide information to users about the required 11-digit length for the phone number field. Users are only informed of the requirement after submitting the form, resulting in an error message.
@@ -181,9 +187,9 @@ Note: To enhance user experience, it is recommended to implement real-time valid
 Bug Report 17: Layout Issue with Maximum Character Count in Subject Field
 Summary: When using the maximum character count in the Subject field, the resulting page displays the subject text across the screen, causing overlap with the contact information for the B&B.
 Steps to Reproduce:
-Navigate to the form containing the Subject field.
-Enter text in the Subject field with the maximum character count.
-Submit the form and observe the resulting page layout.
+1. Navigate to the form containing the Subject field.
+2. Enter text in the Subject field with the maximum character count.
+3. Submit the form and observe the resulting page layout.
 Expected Behavior: The layout of the resulting page should accommodate the entered subject text, preventing overlap with other elements.
 Actual Behavior: When using the maximum character count in the Subject field, the subject text spans across the screen, causing overlap with the contact information for the B&B.
 Note: It is recommended to adjust the layout or provide a mechanism to handle long subject text gracefully, ensuring it does not interfere with other elements on the page. This will enhance the overall presentation and readability of the content.
@@ -192,15 +198,15 @@ Note: It is recommended to adjust the layout or provide a mechanism to handle lo
 Bug Report 18: Inconsistency in Location Name
 Summary: There is an inconsistency in the location name provided by the introduction message and the address listed next to the Contact form.
 Steps to Reproduce:
-Read the introduction message for location information.
-Compare the location name in the introduction message with the address listed next to the Contact form.
+1. Read the introduction message for location information.
+2. Compare the location name in the introduction message with the address listed next to the Contact form.
 Expected Behavior: The location name should be consistent in both the introduction message and the address details.
 Actual Behavior: The introduction message mentions "Newingtonfordburyshire," while the address listed next to the Contact form mentions "Newfordburyshire," indicating an inconsistency in the location name.
 Note: Ensuring consistency in location information will prevent confusion for users and provide accurate details about the B&B's location. It is recommended to update either the introduction message or the address details to maintain coherence.
 
 
-
 Running the Project
+
 To run the automated tests on your local machine, follow these instructions:
 Prerequisites:
 [List any prerequisites, e.g., Node.js, WebDriver, etc.]
@@ -227,6 +233,8 @@ Submission Details
 In the submitted repository or ZIP file, you will find:
 [Link to the Git repository or the ZIP file]
 [.git file (if using Git)]
+
 Conclusion
+
 This automated testing project aims to ensure the reliability and functionality of the Restful Booker application. The identified bugs and testing process details are provided to facilitate understanding and further improvements.
 
