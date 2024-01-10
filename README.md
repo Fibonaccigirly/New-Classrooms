@@ -205,34 +205,47 @@ Actual Behavior: The introduction message mentions "Newingtonfordburyshire," whi
 Note: Ensuring consistency in location information will prevent confusion for users and provide accurate details about the B&B's location. It is recommended to update either the introduction message or the address details to maintain coherence.
 
 
-Running the Project
+Automated Testing Project
+This project focuses on automating the "Contact Us" form on the homepage using Selenium in Visual Studio Code with Python.
 
-To run the automated tests on your local machine, follow these instructions:
+Stack Used:
+Selenium WebDriver
+Visual Studio Code (VS Code)
+Python 3.12.0
+Instructions for Running the Project:
 Prerequisites:
-[List any prerequisites, e.g., Node.js, WebDriver, etc.]
+Ensure you have Python installed on your machine. You can download it here.
+Install the necessary Python packages using the following command in your terminal:
+Copy code
+pip install selenium
+Running the Automated Tests:
+To run the automated tests on your local machine, follow these instructions:
+
 Clone the Repository:
+
 bash
 Copy code
-git clone [repository_url]
-cd restful-booker-automation
+git clone https://github.com/your-username/your-repository.git
+cd your-repository
+Open the Project in Visual Studio Code:
 
-
-Install Dependencies:
-bash
+css
 Copy code
-[Specify the command to install dependencies, e.g., npm install]
+code .
+Run the Automated Tests:
 
-
-Run the Tests:
-bash
+Open the Python script containing your automated tests (e.g., contact_us_test.py) in VS Code.
+Execute the script by using the VS Code debugger or running the following command in the terminal:
 Copy code
-[Specify the command to run the tests, e.g., npm test]
+python contact_us_test.py
+View Test Results:
 
-
-Submission Details
-In the submitted repository or ZIP file, you will find:
-[Link to the Git repository or the ZIP file]
-[.git file (if using Git)]
+The terminal will display the progress and results of the automated tests.
+Any encountered errors or exceptions will be logged for further analysis.
+Notes:
+Make sure to have the appropriate web drivers (e.g., ChromeDriver) in your system PATH or provide the path explicitly in your script.
+Adjust the script according to your file structure and naming conventions.
+By following these instructions, you should be able to run the automated tests successfully on your local machine.
 
 Conclusion
 
