@@ -255,6 +255,78 @@ Notes:
 
 By following these instructions, you should be able to run the automated tests successfully on your local machine.
 
+
+Assumptions and Considerations Section:
+
+During the testing process, certain assumptions were made to guide the test scenarios. These assumptions are detailed below:
+
+1. Email:
+
+  - Ill-formed email:
+    - Assumption: The application is expected to perform validation on the email field to ensure it adheres to a standard email format.
+  - Empty email:
+    - Assumption: The Email field is assumed to be a required field, and an empty email is considered an invalid input.
+  - Long email:
+    - Assumption: The application is assumed to handle emails up to the specified maximum character limit, and exceeding this limit may result in an error or truncation.
+
+Phone:
+
+11 characters:
+
+Assumption: The application is expected to accept a phone number with exactly 11 characters as a valid input.
+21 characters:
+
+Assumption: The application is expected to accept a phone number with exactly 21 characters as a valid input.
+More than 21 characters:
+
+Assumption: Exceeding the specified maximum character limit for the phone number may result in an error or truncation.
+Fewer than 11 characters:
+
+Assumption: The application is expected to reject phone numbers with fewer than 11 characters as invalid inputs.
+Empty phone field:
+
+Assumption: The Phone field is assumed to be required, and leaving it blank is considered an invalid input.
+Subject:
+
+5 characters:
+
+Assumption: The application is expected to accept a subject with exactly 5 characters as a valid input.
+100 characters:
+
+Assumption: The application is expected to accept a subject with exactly 100 characters as a valid input.
+Less than 5 characters:
+
+Assumption: Subjects with fewer than 5 characters are assumed to be rejected as invalid inputs.
+More than 100 characters:
+
+Assumption: Exceeding the specified maximum character limit for the subject may result in an error or truncation.
+Special characters:
+
+Assumption: The application is assumed to reject subjects containing special characters as invalid inputs.
+Empty subject:
+
+Assumption: The Subject field is assumed to be required, and leaving it blank is considered an invalid input.
+Message:
+
+20 characters:
+
+Assumption: The application is expected to accept a message with exactly 20 characters as a valid input.
+2000 characters:
+
+Assumption: The application is expected to accept a message with exactly 2000 characters as a valid input.
+Less than 20 characters:
+
+Assumption: Messages with fewer than 20 characters are assumed to be rejected as invalid inputs.
+More than 2000 characters:
+
+Assumption: Exceeding the specified maximum character limit for the message may result in an error or truncation.
+Special characters:
+
+Assumption: The application is assumed to reject messages containing special characters as invalid inputs.
+Empty message:
+
+Assumption: The Message field is assumed to be required, and leaving it blank is considered an invalid input.
+
 Conclusion
 
 This automated testing project ensures the reliability and functionality of the Restful Booker application. The identified bugs and testing process details are provided to facilitate understanding for future improvement.
