@@ -40,8 +40,7 @@ The test cases cover a diverse range of scenarios, including:
   - Form Submission with Valid Data: The automated script submits the completed form with valid data, mimicking the user action in a successful scenario.
   - Form Submission with Bad Data: Test the form's response to bad data by submitting the form with intentionally incorrect or invalid inputs, such as an invalid email address or phone number.
   - Form Submission with No Data: Assess the form's behavior when submitted with empty fields, ensuring the appropriate handling of incomplete data.
-- Assertion for Success (Commented Out): Due to the complexity of reliably identifying elements on the page after form submission, attempts to implement assertions verifying the success of each form submission have been made but were unsuccessful. Various approaches, including outerHTML, selectors, JS path, styles, XPath, and Full XPath, were explored, but unforeseen challenges were encountered. The absence of assertions in this case should be considered as a limitation in the current implementation.
-By incorporating test cases with bad data and no data, the testing strategy extends to cover potential edge cases and error scenarios, contributing to a more thorough validation of the "Contact Us" form's functionality and user experience on the homepage.
+- Assertion for Success: Assertions for success have been implemented using various possible approaches which could include, outerHTML, selectors, JS path, styles, XPath, or Full XPath, to reliably identify elements on the page after form submission. These assertions play a crucial role in validating the form's functionality. The testing strategy is extended by including test cases with both bad data and no data, covering potential edge cases and error scenarios.
 
 ## Bugs Found
 
