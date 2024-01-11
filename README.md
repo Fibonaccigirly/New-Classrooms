@@ -295,38 +295,38 @@ This project focuses on automating the "Contact Us" form on the homepage using S
 - 
 ### Instructions for Running the Project:
 
-**Prerequisites:**
+#### Prerequisites:
 - Ensure you have Python installed on your machine. You can download it here: https://www.python.org/downloads/
 - Install the necessary Python packages using the following command in your terminal:
 
 `%pip install selenium`
 
-**Running the Automated Tests:**
+#### Running the Automated Tests:
 
 To run the automated tests on your local machine, follow these instructions:
 
-**1. Clone the Repository:**
+  **1. Clone the Repository:**
 
-`git clone https://github.com/Fibonaccigirly/New-Classrooms.git
-cd New-Classrooms`
+    `git clone https://github.com/Fibonaccigirly/New-Classrooms.git
+    cd New-Classrooms`
 
-**2. Open the Project in Visual Studio Code:**
+  **2. Open the Project in Visual Studio Code:**
 
-`code .`
+    `code .`
 
-**3. Run the Automated Tests:**
+  **3. Run the Automated Tests:**
 
-- Open the Python script `NewClassroomsAutomation.py` in VS Code.
-- Execute the script by using the VS Code debugger or running the following command in the terminal:
+    - Open the Python script `NewClassroomsAutomation.py` in VS Code.
+    - Execute the script by using the VS Code debugger or running the following command in the terminal:
 
-`python NewClassroomsBookerTest.py`
+    `python NewClassroomsBookerTest.py`
 
-**4. View Test Results:**
+  **4. View Test Results:**
 
-- The terminal will display the progress and results of the automated tests.
-- Any encountered errors or exceptions will be logged for further analysis.
+    - The terminal will display the progress and results of the automated tests.
+    - Any encountered errors or exceptions will be logged for further analysis.
 
-## Notes:
+#### Notes:
 
 - Make sure to have the appropriate web drivers (e.g., ChromeDriver) in your system PATH or provide the path explicitly in your script.
 - Adjust the script according to your file structure and naming conventions.
