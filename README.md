@@ -1,12 +1,12 @@
-Restful Booker Automated Testing
+# Restful Booker Automated Testing
 
-Introduction
+## Introduction
 
 This repository contains automated tests for a portion of the Restful Booker application. The purpose of these tests is to validate the application against specified requirements using End-to-End (E2E) testing. This README provides essential information about what was tested, how it was tested, any bugs found, and instructions on running the automated tests.
 
-What Was Tested and How
+## What Was Tested and How
 
-Scope of Testing
+### Scope of Testing
 
 I would normally approach the automation of booking tests by incorporating a data-driven approach, encompassing various start dates and durations. The automated tests would be designed to extract essential information, such as the number of nights and associated costs, from the screen. The goal would be to validate that the feature performs its intended function across diverse date ranges and data input insuring the full functionality of the booking feature. 
 However, considering the substantial number of bugs uncovered during testing, along with the complexities of multi-selecting dates within the calendar, I made a deliberate decision to prioritize the automation of a fundamental scenario within the Booking Creation process. Additionally, in response to your specific requirement, a significant portion of my focus was dedicated to creating an automated test that completes the "Contact Us" form on the homepage.
@@ -256,7 +256,8 @@ Notes:
 By following these instructions, you should be able to run the automated tests successfully on your local machine.
 
 
-Assumptions and Considerations Section:
+
+Assumptions and Considerations:
 
 During the testing process, certain assumptions were made to guide the test scenarios. These assumptions are detailed below:
 
