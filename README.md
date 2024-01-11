@@ -9,13 +9,15 @@ This repository contains automated tests for a portion of the Restful Booker app
 ### Scope of Testing
 
 I would normally approach the automation of booking tests by incorporating a data-driven approach, encompassing various start dates and durations. The automated tests would be designed to extract essential information, such as the number of nights and associated costs, from the screen. The goal would be to validate that the feature performs its intended function across diverse date ranges and data input insuring the full functionality of the booking feature. 
-However, considering the substantial number of bugs uncovered during testing, along with the complexities of multi-selecting dates within the calendar, I made a deliberate decision to prioritize the automation of a fundamental scenario within the Booking Creation process. Additionally, in response to your specific requirement, a significant portion of my focus was dedicated to creating an automated test that completes the "Contact Us" form on the homepage.
+
+Given the considerable number of bugs uncovered during testing and the intricacies of multi-selecting dates within the calendar, I made a deliberate decision to prioritize the automation of a singular fundamental scenario. Specifically, my focus was on creating automated tests that not only navigate and complete the "Contact Us" form on the homepage but also rigorously assess its functionality under various conditions.
+
 The automation script, implemented in Python with Selenium, performs the following key steps:
 - Navigates to the homepage.
 - Locates the "Contact Us" form and fills it out with various data inputs, including different name variations, email addresses, and messages.
 - Submits the form.
 - Validates the successful completion of the Contact Us form submission by verifying the presence of a confirmation message as the indicator of success. 
-This test encompasses variations in the form inputs, including positive and negative as well as edge cases such as a blank and special characters in input fields.
+These tests encompasse variations in the form inputs, including positive and negative as well as edge cases such as a blank and special characters in input fields.
 My decision to prioritize the automation of the "Contact Us" form was guided by the principle that even if other features encountered issues, customers could still reach out for assistance. This approach aligns with the notion of ensuring a direct line of communication with users. In essence, it reflects the sentiment: "First thing I'm going to do is make sure the phones work."
 
 ### Testing Tools and Framework
