@@ -100,20 +100,20 @@ The test cases cover a diverse range of scenarios, including:
 
 ---
 
-### BR 5: Lack of Real-time Validation for Subject Length Requirement
+### BR [Bug Number]: Lack of Real-time Validation for All Fields
 
-**Summary:** The Subject field lacks real-time validation, and users are not notified about the requirement for a length between 5 and 100 characters until after submitting the form.
+**Summary:** The system lacks real-time validation for all fields, and users are not notified about the requirements during data entry.
 
 **Steps to Reproduce:**
 1. Navigate to the form containing the Subject field.
-2. Enter a subject with a length outside the range of 5 to 100 characters.
-3. Submit the form.
+2. Enter text in the Subject field with the maximum character count.
+3. Submit the form and observe the resulting page layout.
 
-**Expected Behavior:** Real-time validation should inform users about the 5 to 100 characters requirement for the Subject field before attempting to submit the form.
+**Expected Behavior:** Real-time validation should inform users about the specified requirements for each field as they enter data, preventing the submission of invalid entries.
 
-**Actual Behavior:** The system does not provide real-time feedback to users about the required length for the Subject field. Users are only informed of the requirement after submitting the form, resulting in an error message.
+**Actual Behavior:** The system does not provide real-time feedback to users about the required validation for any field during data entry. Users are only informed of the requirements after submitting the form, resulting in an error message.
 
-**Note:** Implementing real-time validation for the Subject field will enhance the user experience by providing immediate feedback and preventing the submission of invalid data. This will help users adhere to the specified character count requirements.
+**Note:** Implementing real-time validation for all fields will enhance the user experience by providing immediate feedback during data entry and preventing the submission of invalid data. This will help users adhere to the specified requirements.
 
 ---
 
