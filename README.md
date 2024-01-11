@@ -45,251 +45,280 @@ The test cases cover a diverse range of scenarios, including:
 
 ## Bugs Found
 
-BR 1: **Unintuitive Room Booking Process**
+### BR 1: Unintuitive Room Booking Process
 
-_Summary:_ The process of booking a room is unintuitive.
+**Summary:** The process of booking a room is unintuitive.
 
-_Steps to Reproduce:_
+**Steps to Reproduce:**
 1. Navigate to the room booking section.
 2. Attempt to select dates for booking.
    
-_Expected Behavior:_ Clear instructions on how to select dates for booking should be provided.
+**Expected Behavior:** Clear instructions on how to select dates for booking should be provided.
 
-_Actual Behavior:_ There is no indication that users must click and drag to select dates.
+**Actual Behavior:** There is no indication that users must click and drag to select dates.
 
-BR 2: **Lack of Feedback When Clicking on a Date in the Calendar**
+---
 
-_Summary:_ Clicking on a date in the calendar does not provide any error or helpful information.
+### BR 2: Lack of Feedback When Clicking on a Date in the Calendar
 
-_Steps to Reproduce:_
+**Summary:** Clicking on a date in the calendar does not provide any error or helpful information.
 
+**Steps to Reproduce:**
 1. Attempt to click on a specific date in the calendar.
    
-_Expected Behavior:_ The system should respond with appropriate feedback or information letting the user know that they must click and drag *and* that there is a 2 day minimum.
+**Expected Behavior:** The system should respond with appropriate feedback or information letting the user know that they must click and drag *and* that there is a 2 day minimum.
 
-_Actual Behavior:_ No error or helpful information is displayed when clicking on a date in the calendar.
+**Actual Behavior:** No error or helpful information is displayed when clicking on a date in the calendar.
 
-BR 3: **Unable to Unbook a Room**
+---
 
-_Summary:_ There is no indication or clear method to unbook a room once it has been reserved.
+### BR 3: Unable to Unbook a Room
 
-_Steps to Reproduce:_
+**Summary:** There is no indication or clear method to unbook a room once it has been reserved.
+
+**Steps to Reproduce:**
 1. Book a room.
 2. Attempt to find a way to unbook or cancel the reservation.
 
-_Expected Behavior:_ A clear method to unbook or cancel a reservation should be provided.
+**Expected Behavior:** A clear method to unbook or cancel a reservation should be provided.
 
-_Actual Behavior:_ There is no indication or clear method to unbook a room.
+**Actual Behavior:** There is no indication or clear method to unbook a room.
 
-BR 4: **Data Entry Issue When Booking Again**
+---
 
-_Summary:_ The system does not recognize the user, requiring data entry for each booking.
+### BR 4: Data Entry Issue When Booking Again
 
-_Steps to Reproduce:_
+**Summary:** The system does not recognize the user, requiring data entry for each booking.
+
+**Steps to Reproduce:**
 1. Attempt to make a new booking after a previous one.
 2. Observe the system not recognizing the user.
 
-_Expected Behavior:_ User data should be retained for subsequent bookings.
+**Expected Behavior:** User data should be retained for subsequent bookings.
 
-_Actual Behavior:_ The system does not recognize the user, and data must be entered again for each booking.
+**Actual Behavior:** The system does not recognize the user, and data must be entered again for each booking.
 
-BR 5: **Lack of Real-time Validation for Subject Length Requirement**
+---
 
-_Summary:_ The Subject field lacks real-time validation, and users are not notified about the requirement for a length between 5 and 100 characters until after submitting the form.
+### BR 5: Lack of Real-time Validation for Subject Length Requirement
 
-_Steps to Reproduce:_
+**Summary:** The Subject field lacks real-time validation, and users are not notified about the requirement for a length between 5 and 100 characters until after submitting the form.
+
+**Steps to Reproduce:**
 1. Navigate to the form containing the Subject field.
 2. Enter a subject with a length outside the range of 5 to 100 characters.
 3. Submit the form.
 
-_Expected Behavior:_ Real-time validation should inform users about the 5 to 100 characters requirement for the Subject field before attempting to submit the form.
+**Expected Behavior:** Real-time validation should inform users about the 5 to 100 characters requirement for the Subject field before attempting to submit the form.
 
-_Actual Behavior:_ The system does not provide real-time feedback to users about the required length for the Subject field. Users are only informed of the requirement after submitting the form, resulting in an error message.
+**Actual Behavior:** The system does not provide real-time feedback to users about the required length for the Subject field. Users are only informed of the requirement after submitting the form, resulting in an error message.
 
-_Note:_ Implementing real-time validation for the Subject field will enhance the user experience by providing immediate feedback and preventing the submission of invalid data. This will help users adhere to the specified character count requirements.
+**Note:** Implementing real-time validation for the Subject field will enhance the user experience by providing immediate feedback and preventing the submission of invalid data. This will help users adhere to the specified character count requirements.
 
-BR 6: **Allowance for One-Night Booking Despite 2-Night Minimum Requirement**
+---
 
-_Summary:_ Users can book only one night, contrary to the established 2-night minimum requirement, and there is a lack of messaging indicating the minimum night stay.
+### BR 6: Allowance for One-Night Booking Despite 2-Night Minimum Requirement
 
-_Steps to Reproduce:_
+**Summary:** Users can book only one night, contrary to the established 2-night minimum requirement, and there is a lack of messaging indicating the minimum night stay.
+
+**Steps to Reproduce:**
 1. Attempt to book a stay for one night.
 2. Observe the booking process.
 3. Check for messaging regarding the 2-night minimum stay.
 
-_Expected Behavior:_ The booking process should clearly indicate the 2-night minimum requirement, and users should not be allowed to book for just one night.
+**Expected Behavior:** The booking process should clearly indicate the 2-night minimum requirement, and users should not be allowed to book for just one night.
 
-_Actual Behavior:_ Users are able to book only one night, and there is a lack of messaging informing them about the 2-night minimum stay requirement.
+**Actual Behavior:** Users are able to book only one night, and there is a lack of messaging informing them about the 2-night minimum stay requirement.
 
-_Note:_ It is crucial to address this issue by implementing a clear notification about the 2-night minimum stay requirement during the booking process. Additionally, the system should prevent users from successfully booking a stay for only one night. This will align with the established policy and avoid user confusion.
+**Note:** It is crucial to address this issue by implementing a clear notification about the 2-night minimum stay requirement during the booking process. Additionally, the system should prevent users from successfully booking a stay for only one night. This will align with the established policy and avoid user confusion.
 
-BR 7: **Difficulty Unselecting Dates**
+---
 
-_Summary:_ There is no apparent (simple) method to unselect dates once they are chosen.
+### BR 7: Difficulty Unselecting Dates
 
-_Steps to Reproduce:_
+**Summary:** There is no apparent (simple) method to unselect dates once they are chosen.
+
+**Steps to Reproduce:**
 1. Select dates for booking.
 2. Attempt to unselect or deselect the chosen dates.
 
-_Expected Behavior:_ There should be a straightforward way to unselect dates.
+**Expected Behavior:** There should be a straightforward way to unselect dates.
 
-_Actual Behavior:_ No simple method is provided to unselect dates; refreshing the page seems to be the only solution.
+**Actual Behavior:** No simple method is provided to unselect dates; refreshing the page seems to be the only solution.
 
-BR 8: **Multi-Selecting Entire Month Results in Incorrect Booking Period**
+---
 
-_Summary:_ Multi-selecting the entire month for booking includes dates beyond the visible screen.
+### BR 8: Multi-Selecting Entire Month Results in Incorrect Booking Period
 
-_Steps to Reproduce:_
+**Summary:** Multi-selecting the entire month for booking includes dates beyond the visible screen.
+
+**Steps to Reproduce:**
 1. Attempt to book the entire month in the calendar.
 2. Observe the booked period.
 
-_Expected Behavior:_ Booking should only include the dates visibly selected on the screen.
+**Expected Behavior:** Booking should only include the dates visibly selected on the screen.
 
-_Actual Behavior:_ Multi-selecting the entire month results in a booking that includes dates beyond the visible screen.
+**Actual Behavior:** Multi-selecting the entire month results in a booking that includes dates beyond the visible screen.
 
-BR 9: **Placeholder Text in Room Description**
+---
 
-_Summary:_ Room description contains Lorem Ipsum placeholder text, inconsistent with the rest of the English text on the platform.
+### BR 9: Placeholder Text in Room Description
 
-_Steps to Reproduce:_
+**Summary:** Room description contains Lorem Ipsum placeholder text, inconsistent with the rest of the English text on the platform.
+
+**Steps to Reproduce:**
 1. Navigate to the room description section.
 2. Observe the content of the room description.
 
-_Expected Behavior:_ The room description should contain coherent and relevant information in English.
+**Expected Behavior:** The room description should contain coherent and relevant information in English.
 
-_Actual Behavior:_ The room description contains Lorem Ipsum placeholder text, inconsistent with the rest of the English text.
+**Actual Behavior:** The room description contains Lorem Ipsum placeholder text, inconsistent with the rest of the English text.
 
-BR 10: **Incorrect Night Count in Booking Confirmation**
+---
 
-_Summary:_ The booking confirmation displays an incorrect night count when selecting all available dates.
+### BR 10: Incorrect Night Count in Booking Confirmation
 
-_Steps to Reproduce:_
+**Summary:** The booking confirmation displays an incorrect night count when selecting all available dates.
+
+**Steps to Reproduce:**
 1. Select all available dates from July 2024, from June 30th to August 3rd.
 2. Review the booking confirmation details.
 
-_Expected Behavior:_ The booking confirmation should display the correct number of nights selected.
+**Expected Behavior:** The booking confirmation should display the correct number of nights selected.
 
-_Actual Behavior:_ Although 35 nights are selected, the confirmation message states 34 nights. An additional day is added to the end of the booking period (June 30th to August 4th).
-Screenshot: <img width="659" alt="BugReportTen" src="https://github.com/Fibonaccigirly/New-Classrooms/assets/152340015/bbf6bc7d-2c55-4bcf-9b24-c685c2f93017">
+**Actual Behavior:** Although 35 nights are selected, the confirmation message states 34 nights. An additional day is added to the end of the booking period (June 30th to August 4th).
 
-BR 11: **Inconsistent and Non-Specific Field Length Error Messages**
+**Screenshot:** ![BugReportTen](https://github.com/Fibonaccigirly/New-Classrooms/assets/152340015/bbf6bc7d-2c55-4bcf-9b24-c685c2f93017)
 
-_Summary:_ Error messages for field length do not provide specific information, and there is a discrepancy between the documented requirements and the actual behavior for the First Name field.
+---
 
-_Steps to Reproduce:_
+### BR 11: Inconsistent and Non-Specific Field Length Error Messages
+
+**Summary:** Error messages for field length do not provide specific information, and there is a discrepancy between the documented requirements and the actual behavior for the First Name field.
+
+**Steps to Reproduce:**
 1. Enter data into the name, email, and phone fields.
 2. Intentionally provide data that does not meet the length requirements for the First Name field.
 3. Observe the error messages.
 
-_Expected Behavior:_ Error messages should clearly indicate which field has a length issue and match the documented length requirements.
+**Expected Behavior:** Error messages should clearly indicate which field has a length issue and match the documented length requirements.
 
-_Actual Behavior:_ Error messages, such as "size must be between 3 and 18," are not specific about which field is causing the problem. The documented requirements for the First Name field specify a range of 3 to 20 characters. However, it appears that the First Name field only accepts up to 18 characters.
+**Actual Behavior:** Error messages, such as "size must be between 3 and 18," are not specific about which field is causing the problem. The documented requirements for the First Name field specify a range of 3 to 20 characters. However, it appears that the First Name field only accepts up to 18 characters.
 
-_Discrepancy with Documentation:_
+**Discrepancy with Documentation:**
 First Name field character counts must be between 3 and 20 (documented requirement).
 The observed behavior suggests that the First Name field only accepts up to 18 characters.
 
+---
 
-BR 12: **Incorrect Day Count in Message for One-Week Period**
+### BR 12: Incorrect Day Count in Message for One-Week Period
 
-_Summary:_ When selecting two or more dates within a one-week period that includes a Saturday, the displayed message about the number of days selected is incorrect.
+**Summary:** When selecting two or more dates within a one-week period that includes a Saturday, the displayed message about the number of days selected is incorrect.
 
-_Steps to Reproduce:_
+**Steps to Reproduce:**
 1. Select two or more dates in a one-week period that includes a Saturday (e.g., Fri and Sat or Thu, Fri, and Sat).
 2. Observe the message indicating the number of nights selected.
 
-_Expected Behavior:_ The message should accurately reflect the number of nights selected, including the correct count when Saturdays are involved.
+**Expected Behavior:** The message should accurately reflect the number of nights selected, including the correct count when Saturdays are involved.
 
-_Actual Behavior:_ The message displays an incorrect count when selecting dates in a one-week period that includes a Saturday. For example:
+**Actual Behavior:** The message displays an incorrect count when selecting dates in a one-week period that includes a Saturday. For example:
 Selecting Fri and Sat displays "1 night(s) selected."
 Selecting Thu, Fri, and Sat displays "2 night(s) selected."
 
-_Note:_ Despite the incorrect message, the actual booking correctly reflects the accurate number of nights selected.
+**Note:** Despite the incorrect message, the actual booking correctly reflects the accurate number of nights selected.
 
+---
 
-BR 13: **Ability to Select and Book Dates in the Past**
+### BR 13: Ability to Select and Book Dates in the Past
 
-_Summary:_ The system allows users to select and book dates in the past.
+**Summary:** The system allows users to select and book dates in the past.
 
-_Steps to Reproduce:_
+**Steps to Reproduce:**
 1. Navigate to the date selection section for booking.
 2. Attempt to select and book dates that are in the past.
 
-_Expected Behavior:_ The system should prevent users from selecting and booking dates that have already passed.
+**Expected Behavior:** The system should prevent users from selecting and booking dates that have already passed.
 
-_Actual Behavior:_ Users are able to select and book dates that are in the past.
+**Actual Behavior:** Users are able to select and book dates that are in the past.
 
-_Note:_ Ensure that the system validates and restricts the selection of dates to the current date or any future dates. Users should not be able to book accommodations for dates that have already occurred.
+**Note:** Ensure that the system validates and restricts the selection of dates to the current date or any future dates. Users should not be able to book accommodations for dates that have already occurred.
 
+---
 
-BR 14: **Missing Requirement Information for Message Field**
+### BR 14: Missing Requirement Information for Message Field
 
-_Summary:_ The Message field lacks information about the character count requirement (between 20 and 2000 characters), leading to form submission failures without prior notification.
+**Summary:** The Message field lacks information about the character count requirement (between 20 and 2000 characters), leading to form submission failures without prior notification.
 
-_Steps to Reproduce:_
+**Steps to Reproduce:**
 1. Navigate to the form containing the Message field.
-2. Enter all required data 
-Attempt to submit a message that does not meet the length requirements.
+2. Enter all required data.
+3. Attempt to submit a message that does not meet the length requirements.
 
-_Expected Behavior:_ Users should be informed about the character count requirement for the Message field before attempting to submit the form.
+**Expected Behavior:** Users should be informed about the character count requirement for the Message field before attempting to submit the form.
 
-_Actual Behavior:_ The system does not provide information to users about the required character count range (20 to 2000) for the Message field. As a result, form submission fails without prior notification, leading to an error message.
+**Actual Behavior:** The system does not provide information to users about the required character count range (20 to 2000) for the Message field. As a result, form submission fails without prior notification, leading to an error message.
 
-_Note:_ It is recommended to add a clear instruction or message near the Message field, notifying users about the required character count range to avoid submission errors.
+**Note:** It is recommended to add a clear instruction or message near the Message field, notifying users about the required character count range to avoid submission errors.
 
+---
 
-BR 15: **Lack of User Notification for Phone Number Length Requirement**
+### BR 15: Lack of User Notification for Phone Number Length Requirement
 
-_Summary:_ The phone number field lacks information about the requirement for an 11-digit number, and users are only informed of the requirement after submitting the form.
+**Summary:** The phone number field lacks information about the requirement for an 11-digit number, and users are only informed of the requirement after submitting the form.
 
-_Steps to Reproduce:_
+**Steps to Reproduce:**
 1. Navigate to the form containing the phone number field.
 2. Enter a phone number with a length other than 11 digits.
-Submit the form.
+3. Submit the form.
 
-_Expected Behavior:_ Users should be notified about the 11-digit requirement for the phone number field before attempting to submit the form.
+**Expected Behavior:** Users should be notified about the 11-digit requirement for the phone number field before attempting to submit the form.
 
-_Actual Behavior:_ The system does not provide information to users about the required 11-digit length for the phone number field. Users are only informed of the requirement after submitting the form, resulting in an error message.
+**Actual Behavior:** The system does not provide information to users about the required 11-digit length for the phone number field. Users are only informed of the requirement after submitting the form, resulting in an error message.
 
-_Note:_ To enhance user experience, it is recommended to implement real-time validation or provide clear instructions near the phone number field, indicating the specific requirements to avoid submission errors.
+**Note:** To enhance user experience, it is recommended to implement real-time validation or provide clear instructions near the phone number field, indicating the specific requirements to avoid submission errors.
 
+---
 
-BR 17: **Layout Issue with Maximum Character Count in Subject Field**
+## Bugs Found
 
-_Summary:_ When using the maximum character count in the Subject field, the resulting page displays the subject text across the screen, causing overlap with the contact information for the B&B.
+### BR 16: Layout Issue with Maximum Character Count in Subject Field
 
-_Steps to Reproduce:_
+**Summary:** When using the maximum character count in the Subject field, the resulting page displays the subject text across the screen, causing overlap with the contact information for the B&B.
+
+**Steps to Reproduce:**
 1. Navigate to the form containing the Subject field.
 2. Enter text in the Subject field with the maximum character count.
 3. Submit the form and observe the resulting page layout.
 
-_Expected Behavior:_ The layout of the resulting page should accommodate the entered subject text, preventing overlap with other elements.
+**Expected Behavior:** The layout of the resulting page should accommodate the entered subject text, preventing overlap with other elements.
 
-_Actual Behavior:_ When using the maximum character count in the Subject field, the subject text spans across the screen, causing overlap with the contact information for the B&B.
+**Actual Behavior:** When using the maximum character count in the Subject field, the subject text spans across the screen, causing overlap with the contact information for the B&B.
 
-_Note:_ It is recommended to adjust the layout or provide a mechanism to handle long subject text gracefully, ensuring it does not interfere with other elements on the page. This will enhance the overall presentation and readability of the content.
+**Note:** It is recommended to adjust the layout or provide a mechanism to handle long subject text gracefully, ensuring it does not interfere with other elements on the page. This will enhance the overall presentation and readability of the content.
 
+---
 
-BR 18: **Inconsistency in Location Name**
+### BR 17: Inconsistency in Location Name
 
-_Summary:_ There is an inconsistency in the location name provided by the introduction message and the address listed next to the Contact form.
+**Summary:** There is an inconsistency in the location name provided by the introduction message and the address listed next to the Contact form.
 
-_Steps to Reproduce:_
+**Steps to Reproduce:**
 1. Read the introduction message for location information.
 2. Compare the location name in the introduction message with the address listed next to the Contact form.
 
-_Expected Behavior:_ The location name should be consistent in both the introduction message and the address details.
+**Expected Behavior:** The location name should be consistent in both the introduction message and the address details.
 
-_Actual Behavior:_ The introduction message mentions "Newingtonfordburyshire," while the address listed next to the Contact form mentions "Newfordburyshire," indicating an inconsistency in the location name.
+**Actual Behavior:** The introduction message mentions "Newingtonfordburyshire," while the address listed next to the Contact form mentions "Newfordburyshire," indicating an inconsistency in the location name.
 
-_Note:_ Ensuring consistency in location information will prevent confusion for users and provide accurate details about the B&B's location. It is recommended to update either the introduction message or the address details to maintain coherence.
+**Note:** Ensuring consistency in location information will prevent confusion for users and provide accurate details about the B&B's location. It is recommended to update either the introduction message or the address details to maintain coherence.
 
+---
 
-BR 19: **Form Submission Failure with Excessively Long Names**
+### BR 18: Form Submission Failure with Excessively Long Names
 
-_Summary:_ Submitting the Contact Us form with excessively long first and last names results in a blank page, and the form does not recover.
+**Summary:** Submitting the Contact Us form with excessively long first and last names results in a blank page, and the form does not recover.
 
-_Steps to Reproduce:_
+**Steps to Reproduce:**
 1. Navigate to the Contact Us form.
 2. Enter the following first/last name:
   - First: Adolph Blaine Charles David Earl Frederick Gerald Hubert Irvin John Kenneth Lloyd Martin Nero Oliver Paul Quincy Randolph Sherman Thomas Uncas Victor William Xerxes Yancy Zeus 
@@ -297,14 +326,12 @@ _Steps to Reproduce:_
 3. Submit the form.
 4. Observe the result.
 
-_Expected Behavior:_ The system should handle long names gracefully, providing appropriate error messages or preventing submission, but not resulting in a blank page.
+**Expected Behavior:** The system should handle long names gracefully, providing appropriate error messages or preventing submission, but not resulting in a blank page.
 
-_Actual Behavior:_ Submitting the form with the given extremely long names leads to a blank page, and the form does not recover.
+**Actual Behavior:** Submitting the form with the given extremely long names leads to a blank page, and the form does not recover.
 
-_Note:_ To enhance the robustness of the form submission process, it is recommended to implement validation checks on the length of the entered names and provide clear error messages to users when the data exceeds acceptable limits. This will prevent issues such as blank pages and improve the overall user experience.
-
-ChatGPT
-
+**Note:** To enhance the robustness of the form submission process, it is recommended to implement validation checks on the length of the entered names and provide clear error messages to users when the data exceeds acceptable limits. This will prevent issues such as blank pages and improve the overall user experience.
+---
 
 ## Automated Testing Project
 
