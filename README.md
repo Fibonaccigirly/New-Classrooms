@@ -1,4 +1,4 @@
-# Restful Booker Automated Testing
+# New Classrooms Restful Booker Automated Testing
 
 ## Introduction
 
@@ -17,13 +17,13 @@ The automation script, implemented in Python with Selenium, performs the followi
 - Locates the "Contact Us" form and fills it out with various data inputs, including different name variations, email addresses, and messages.
 - Submits the form.
 - Validates the successful completion of the Contact Us form submission by verifying the presence of a confirmation message as the indicator of success. 
-These tests encompasse variations in the form inputs, including positive and negative as well as edge cases such as a blank and special characters in input fields.
+These tests encompasse variations in the form inputs, including positive and negative as well as edge cases such as blank and special characters in input fields.
 My decision to prioritize the automation of the "Contact Us" form was guided by the principle that even if other features encountered issues, customers could still reach out for assistance. This approach aligns with the notion of ensuring a direct line of communication with users. In essence, it reflects the sentiment: "First thing I'm going to do is make sure the phones work."
 
 ### Testing Tools and Framework
 
 For this project, I chose to use Selenium IDE with Python 3.12.0 for several reasons:
-- Ease of Use: Selenium IDE provides a user-friendly environment for testing of web applications.
+- Ease of Use: Selenium IDE provides a user-friendly environment for testing web applications.
 - Python 3.12.0 Compatibility: Python is a versatile and widely-used programming language. The compatibility of Selenium IDE with Python 3.12.0 allows for leveraging the strengths of Python, such as readability and a vast array of libraries, in the testing process.
 - Extensive Community Support: Selenium has a robust community with a wealth of documentation, forums, and resources. This ensures that any challenges encountered during the coding process can be addressed promptly leveraging community support.
 - Cross-Browser Compatibility: Selenium IDE supports testing across multiple browsers, ensuring that the application's functionality is consistent and reliable for users using different browsers.
@@ -35,12 +35,12 @@ By choosing Selenium IDE with Python 3.12.0, I aimed to leverage a toolset that 
 The test cases were created to address a crucial user interaction on the homepage: completing the "Contact Us" form. The primary objective of these automated tests is to simulate user behavior, ensuring that the form is filled out, submitted, and validating the successful completion of the form submission. Additionally, the tests assess the application's response to various scenarios, including the correct inputs and graceful error handling. 
 
 The test cases cover a diverse range of scenarios, including:
-- Navigation to the Homepage: Ensure the automated script navigates to the homepage successfully, setting the stage for the "Contact Us" form interaction.
-- Form Completion with Various Inputs: Utilizing variations in the form data, including different name inputs, email addresses, and messages, the script fills out the "Contact Us" form. This step aims to encompass diverse scenarios, ensuring the resilience of the form to invalid inputs.
-  - Form Submission with Valid Data: The automated script submits the completed form with valid data, mimicking the user action in a successful scenario.
-  - Form Submission with Bad Data: Test the form's response to bad data by submitting the form with intentionally incorrect or invalid inputs, such as an invalid email address or phone number.
-  - Form Submission with No Data: Assess the form's behavior when submitted with empty fields, ensuring the appropriate handling of incomplete data.
-- Assertion for Success: Assertions for success have been implemented using various possible approaches which could include, outerHTML, selectors, JS path, styles, XPath, or Full XPath, to reliably identify elements on the page after form submission. These assertions play a crucial role in validating the form's functionality. The testing strategy is extended by including test cases with both bad data and no data, covering potential edge cases and error scenarios.
+- **Navigation to the Homepage:** Ensure the automated script navigates to the homepage successfully, setting the stage for the "Contact Us" form interaction.
+- **Form Completion with Various Inputs:** Utilizing variations in the form data, including different name inputs, email addresses, and messages, the script fills out the "Contact Us" form. This step aims to encompass diverse scenarios, ensuring the resilience of the form to invalid inputs.
+  - _Form Submission with Valid Data:_ The automated script submits the completed form with valid data, mimicking the user action in a successful scenario.
+  - _Form Submission with Bad Data:_ Test the form's response to bad data by submitting the form with intentionally incorrect or invalid inputs, such as an invalid email address or phone number.
+  - _Form Submission with No Data:_ Assess the form's behavior when submitted with empty fields, ensuring the appropriate handling of incomplete data.
+- **Assertion for Success:** Assertions for success have been implemented using various possible approaches which could include, outerHTML, selectors, JS path, styles, XPath, or Full XPath, to reliably identify elements on the page after form submission. These assertions play a crucial role in validating the form's functionality. The testing strategy is extended by including test cases with both bad data and no data, covering potential edge cases and error scenarios.
 
 ## Bugs Found
 
