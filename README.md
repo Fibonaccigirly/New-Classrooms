@@ -100,9 +100,9 @@ The test cases cover a diverse range of scenarios, including:
 
 ---
 
-### BR [Bug Number]: Lack of Real-time Validation for All Fields
+### BR 5: Lack of Real-time Validation for All Fields
 
-**Summary:** The system lacks real-time validation for all fields, and users are not notified about the requirements during data entry.
+**Summary:** The system lacks real-time validation for all fields, and users aren't notified about the requirements during data entry.
 
 **Steps to Reproduce:**
 1. Navigate to the form containing the Subject field.
@@ -144,7 +144,7 @@ The test cases cover a diverse range of scenarios, including:
 
 **Expected Behavior:** There should be a straightforward way to unselect dates.
 
-**Actual Behavior:** No simple method is provided to unselect dates; refreshing the page seems to be the only solution.
+**Actual Behavior:** No simple method is provided to unselect dates; either selecting additional days or refreshing the page works
 
 ---
 
@@ -178,17 +178,18 @@ The test cases cover a diverse range of scenarios, including:
 
 ### BR 10: Incorrect Night Count in Booking Confirmation
 
-**Summary:** The booking confirmation displays an incorrect night count when selecting all available dates.
+**Summary:** The booking confirmation displays an incorrect night count when selecting dates.
 
 **Steps to Reproduce:**
-1. Select all available dates from July 2024, from June 30th to August 3rd.
-2. Review the booking confirmation details.
+1. Select several available dates
+2. Review the booking confirmation details
 
 **Expected Behavior:** The booking confirmation should display the correct number of nights selected.
 
-**Actual Behavior:** Although 35 nights are selected, the confirmation message states 34 nights. An additional day is added to the end of the booking period (June 30th to August 4th).
+**Actual Behavior:** When selecting mutltiple dates it seems to drop one of the days
 
-**Screenshot:** ![BugReportTen](https://github.com/Fibonaccigirly/New-Classrooms/assets/152340015/bbf6bc7d-2c55-4bcf-9b24-c685c2f93017)
+**Screenshot:** <img width="700" alt="Screen Shot 2024-01-11 at 3 32 52 PM" src="https://github.com/Fibonaccigirly/New-Classrooms/assets/152340015/eed52d8c-bb99-4124-bebe-f2d49fc8958b">
+
 
 ---
 
