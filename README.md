@@ -269,63 +269,48 @@ During the testing process, certain assumptions were made to guide the test scen
   - Long email:
     - Assumption: The application is assumed to handle emails up to the specified maximum character limit, and exceeding this limit may result in an error or truncation.
 
-Phone:
+2. Phone:
 
-11 characters:
+  - 11 characters:
+    - Assumption: The application is expected to accept a phone number with exactly 11 characters as a valid input.
+  - 21 characters:
+    - Assumption: The application is expected to accept a phone number with exactly 21 characters as a valid input.
+  - More than 21 characters:
+    - Assumption: Exceeding the specified maximum character limit for the phone number may result in an error or truncation.
+  - Fewer than 11 characters:
+    - Assumption: The application is expected to reject phone numbers with fewer than 11 characters as invalid inputs.
+  - Empty phone field:
+    - Assumption: The Phone field is assumed to be required, and leaving it blank is considered an invalid input.
 
-Assumption: The application is expected to accept a phone number with exactly 11 characters as a valid input.
-21 characters:
+3. Subject:
 
-Assumption: The application is expected to accept a phone number with exactly 21 characters as a valid input.
-More than 21 characters:
+  - 5 characters:
+    - Assumption: The application is expected to accept a subject with exactly 5 characters as a valid input.
+  - 100 characters:
+    -Assumption: The application is expected to accept a subject with exactly 100 characters as a valid input.
+  - Fewer than 5 characters:
+    - Assumption: Subjects with fewer than 5 characters are assumed to be rejected as invalid inputs.
+  - More than 100 characters:
+    - Assumption: Exceeding the specified maximum character limit for the subject may result in an error or truncation.
+  - Special characters:
+    - Assumption: The application is assumed to reject subjects containing special characters as invalid inputs.
+  - Empty subject:
+    - Assumption: The Subject field is assumed to be required, and leaving it blank is considered an invalid input.
 
-Assumption: Exceeding the specified maximum character limit for the phone number may result in an error or truncation.
-Fewer than 11 characters:
+4. Message:
 
-Assumption: The application is expected to reject phone numbers with fewer than 11 characters as invalid inputs.
-Empty phone field:
-
-Assumption: The Phone field is assumed to be required, and leaving it blank is considered an invalid input.
-Subject:
-
-5 characters:
-
-Assumption: The application is expected to accept a subject with exactly 5 characters as a valid input.
-100 characters:
-
-Assumption: The application is expected to accept a subject with exactly 100 characters as a valid input.
-Less than 5 characters:
-
-Assumption: Subjects with fewer than 5 characters are assumed to be rejected as invalid inputs.
-More than 100 characters:
-
-Assumption: Exceeding the specified maximum character limit for the subject may result in an error or truncation.
-Special characters:
-
-Assumption: The application is assumed to reject subjects containing special characters as invalid inputs.
-Empty subject:
-
-Assumption: The Subject field is assumed to be required, and leaving it blank is considered an invalid input.
-Message:
-
-20 characters:
-
-Assumption: The application is expected to accept a message with exactly 20 characters as a valid input.
-2000 characters:
-
-Assumption: The application is expected to accept a message with exactly 2000 characters as a valid input.
-Less than 20 characters:
-
-Assumption: Messages with fewer than 20 characters are assumed to be rejected as invalid inputs.
-More than 2000 characters:
-
-Assumption: Exceeding the specified maximum character limit for the message may result in an error or truncation.
-Special characters:
-
-Assumption: The application is assumed to reject messages containing special characters as invalid inputs.
-Empty message:
-
-Assumption: The Message field is assumed to be required, and leaving it blank is considered an invalid input.
+  - 20 characters:
+    - Assumption: The application is expected to accept a message with exactly 20 characters as a valid input.
+  - 2000 characters:
+    - Assumption: The application is expected to accept a message with exactly 2000 characters as a valid input.
+  - Less than 20 characters:
+    - Assumption: Messages with fewer than 20 characters are assumed to be rejected as invalid inputs.
+  - More than 2000 characters:
+    - Assumption: Exceeding the specified maximum character limit for the message may result in an error or truncation.
+  - Special characters:
+    - Assumption: The application is assumed to reject messages containing special characters as invalid inputs.
+  - Empty message:
+    - Assumption: The Message field is assumed to be required, and leaving it blank is considered an invalid input.
 
 Conclusion
 
