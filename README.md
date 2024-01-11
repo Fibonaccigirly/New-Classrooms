@@ -325,6 +325,8 @@ To run the automated tests on your local machine, follow these instructions:
 
     - The terminal will display the progress and results of the automated tests.
     - Any encountered errors or exceptions will be logged for further analysis.
+      - _Example:_ 2024-01-11 12:26:55,354 [INFO] Running test variation #1
+      2024-01-11 12:27:00,943 [INFO] Success message found: Thanks for getting in touch Jane Doe!
 
 #### Notes:
 
