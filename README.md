@@ -18,7 +18,7 @@ The automation script, implemented in Python with Selenium, performs the followi
 This test encompasses variations in the form inputs, including positive and negative as well as edge cases such as a blank and special characters in input fields.
 My decision to prioritize the automation of the "Contact Us" form was guided by the principle that even if other features encountered issues, customers could still reach out for assistance. This approach aligns with the notion of ensuring a direct line of communication with users. In essence, it reflects the sentiment: "First thing I'm going to do is make sure the phones work."
 
-Testing Tools and Framework
+### Testing Tools and Framework
 
 For this project, I chose to use Selenium IDE with Python 3.12.0 for several reasons:
 - Ease of Use: Selenium IDE provides a user-friendly environment for testing of web applications.
@@ -28,7 +28,7 @@ For this project, I chose to use Selenium IDE with Python 3.12.0 for several rea
 - Flexibility for Future Enhancements: Selenium IDE, combined with Python, offers the flexibility to scale and enhance the test suite as the application evolves. The extensibility of Python allows for the integration of additional libraries or frameworks if required.
 By choosing Selenium IDE with Python 3.12.0, I aimed to leverage a toolset that not only facilitates efficient test automation but also aligns with the specific needs and goals of this testing project.
 
-Test Case Development
+### Test Case Development
 
 The test cases were created to address a crucial user interaction on the homepage: completing the "Contact Us" form. The primary objective of these automated tests is to simulate user behavior, ensuring that the form is filled out, submitted, and validating the successful completion of the form submission. Additionally, the tests assess the application's response to various scenarios, including the correct inputs and graceful error handling. 
 
@@ -41,7 +41,7 @@ The test cases cover a diverse range of scenarios, including:
 - Assertion for Success (Commented Out): Due to the complexity of reliably identifying elements on the page after form submission, attempts to implement assertions verifying the success of each form submission have been made but were unsuccessful. Various approaches, including outerHTML, selectors, JS path, styles, XPath, and Full XPath, were explored, but unforeseen challenges were encountered. The absence of assertions in this case should be considered as a limitation in the current implementation.
 By incorporating test cases with bad data and no data, the testing strategy extends to cover potential edge cases and error scenarios, contributing to a more thorough validation of the "Contact Us" form's functionality and user experience on the homepage.
 
-Bugs Found
+## Bugs Found
 
 Bug Report 1: Unintuitive Room Booking Process
 Summary: The process of booking a room is unintuitive.
@@ -205,50 +205,50 @@ Actual Behavior: The introduction message mentions "Newingtonfordburyshire," whi
 Note: Ensuring consistency in location information will prevent confusion for users and provide accurate details about the B&B's location. It is recommended to update either the introduction message or the address details to maintain coherence.
 
 
-Automated Testing Project
+## Automated Testing Project
 
 This project focuses on automating the "Contact Us" form on the homepage using Selenium in Visual Studio Code with Python.
 
-Stack Used:
+### Stack Used:
 
 - Selenium WebDriver
 - Visual Studio Code (VS Code)
 - Python 3.12.0
 - 
-Instructions for Running the Project:
+### Instructions for Running the Project:
 
-Prerequisites:
+**Prerequisites:**
 - Ensure you have Python installed on your machine. You can download it here: https://www.python.org/downloads/
 - Install the necessary Python packages using the following command in your terminal:
 
-%pip install selenium
+`%pip install selenium`
 
-Running the Automated Tests:
+**Running the Automated Tests:**
 
 To run the automated tests on your local machine, follow these instructions:
 
-1. Clone the Repository:
+**1. Clone the Repository:**
 
-git clone https://github.com/Fibonaccigirly/New-Classrooms.git
-cd New-Classrooms
+`git clone https://github.com/Fibonaccigirly/New-Classrooms.git
+cd New-Classrooms`
 
-2. Open the Project in Visual Studio Code:
+**2. Open the Project in Visual Studio Code:**
 
-code .
+`code .`
 
-3. Run the Automated Tests:
+**3. Run the Automated Tests:**
 
 - Open the Python script containing your automated tests (e.g., contact_us_test.py) in VS Code.
 - Execute the script by using the VS Code debugger or running the following command in the terminal:
 
-python NewClassroomsBookerTest.py
+`python NewClassroomsBookerTest.py`
 
-4. View Test Results:
+**4. View Test Results:**
 
 - The terminal will display the progress and results of the automated tests.
 - Any encountered errors or exceptions will be logged for further analysis.
 
-Notes:
+## Notes:
 
 - Make sure to have the appropriate web drivers (e.g., ChromeDriver) in your system PATH or provide the path explicitly in your script.
 - Adjust the script according to your file structure and naming conventions.
@@ -257,7 +257,7 @@ By following these instructions, you should be able to run the automated tests s
 
 
 
-Assumptions and Considerations:
+## Assumptions and Considerations:
 
 During the testing process, certain assumptions were made to guide the test scenarios. These assumptions are detailed below:
 
@@ -313,7 +313,7 @@ During the testing process, certain assumptions were made to guide the test scen
   - Empty message:
     - Assumption: The Message field is assumed to be required, and leaving it blank is considered an invalid input.
 
-Conclusion
+## Conclusion
 
 This automated testing project ensures the reliability and functionality of the Restful Booker application. The identified bugs and testing process details are provided to facilitate understanding for future improvement.
 
