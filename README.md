@@ -44,29 +44,32 @@ The test cases cover a diverse range of scenarios, including:
 
 ## Bugs Found
 
-BR 1: **Unintuitive Room Booking Process**
+## BR 1: Unintuitive Room Booking Process
 
-_Summary:_ The process of booking a room is unintuitive.
+**Summary:** The process of booking a room is unintuitive.
 
-_Steps to Reproduce:_
+**Steps to Reproduce:**
 1. Navigate to the room booking section.
 2. Attempt to select dates for booking.
    
-_Expected Behavior:_ Clear instructions on how to select dates for booking should be provided.
+**Expected Behavior:** Clear instructions on how to select dates for booking should be provided.
 
-_Actual Behavior:_ There is no indication that users must click and drag to select dates.
+**Actual Behavior:** There is no indication that users must click and drag to select dates.
 
-BR 2: **Lack of Feedback When Clicking on a Date in the Calendar**
+---
 
-_Summary:_ Clicking on a date in the calendar does not provide any error or helpful information.
+## BR 2: Lack of Feedback When Clicking on a Date in the Calendar
 
-_Steps to Reproduce:_
+**Summary:** Clicking on a date in the calendar does not provide any error or helpful information.
 
+**Steps to Reproduce:**
 1. Attempt to click on a specific date in the calendar.
    
-_Expected Behavior:_ The system should respond with appropriate feedback or information letting the user know that they must click and drag *and* that there is a 2 day minimum.
+**Expected Behavior:** The system should respond with appropriate feedback or information letting the user know that they must click and drag *and* that there is a 2 day minimum.
 
-_Actual Behavior:_ No error or helpful information is displayed when clicking on a date in the calendar.
+**Actual Behavior:** No error or helpful information is displayed when clicking on a date in the calendar.
+
+---
 
 BR 3: **Unable to Unbook a Room**
 
