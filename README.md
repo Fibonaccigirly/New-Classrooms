@@ -316,7 +316,7 @@ cd New-Classrooms`
 
 **3. Run the Automated Tests:**
 
-- Open the Python script containing your automated tests (e.g., contact_us_test.py) in VS Code.
+- Open the Python script `NewClassroomsAutomation.py' in VS Code.
 - Execute the script by using the VS Code debugger or running the following command in the terminal:
 
 `python NewClassroomsBookerTest.py`
