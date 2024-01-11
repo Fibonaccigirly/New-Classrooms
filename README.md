@@ -225,48 +225,12 @@ The observed behavior suggests that the First Name field only accepts up to 18 c
 **Actual Behavior:** Users are able to select and book dates that are in the past.
 
 **Note:** Ensure that the system validates and restricts the selection of dates to the current date or any future dates. Users should not be able to book accommodations for dates that have already occurred.
-
+Today's date is January 11th 2024: 
 <img width="680" alt="Screen Shot 2024-01-11 at 3 35 30 PM" src="https://github.com/Fibonaccigirly/New-Classrooms/assets/152340015/504740fc-dce3-4e4b-85de-053d1ce54b71">
 
 ---
 
-### BR 13: Missing Requirement Information for Message Field
-
-**Summary:** The Message field lacks information about the character count requirement (between 20 and 2000 characters), leading to form submission failures without prior notification.
-
-**Steps to Reproduce:**
-1. Navigate to the form containing the Message field.
-2. Enter all required data.
-3. Attempt to submit a message that does not meet the length requirements.
-
-**Expected Behavior:** Users should be informed about the character count requirement for the Message field before attempting to submit the form.
-
-**Actual Behavior:** The system does not provide information to users about the required character count range (20 to 2000) for the Message field. As a result, form submission fails without prior notification, leading to an error message.
-
-**Note:** It is recommended to add a clear instruction or message near the Message field, notifying users about the required character count range to avoid submission errors.
-
----
-
-### BR 15: Lack of User Notification for Phone Number Length Requirement
-
-**Summary:** The phone number field lacks information about the requirement for an 11-digit number, and users are only informed of the requirement after submitting the form.
-
-**Steps to Reproduce:**
-1. Navigate to the form containing the phone number field.
-2. Enter a phone number with a length other than 11 digits.
-3. Submit the form.
-
-**Expected Behavior:** Users should be notified about the 11-digit requirement for the phone number field before attempting to submit the form.
-
-**Actual Behavior:** The system does not provide information to users about the required 11-digit length for the phone number field. Users are only informed of the requirement after submitting the form, resulting in an error message.
-
-**Note:** To enhance user experience, it is recommended to implement real-time validation or provide clear instructions near the phone number field, indicating the specific requirements to avoid submission errors.
-
----
-
-## Bugs Found
-
-### BR 16: Layout Issue with Maximum Character Count in Subject Field
+### BR 13: Layout Issue with Maximum Character Count in Subject Field
 
 **Summary:** When using the maximum character count in the Subject field, the resulting page displays the subject text across the screen, causing overlap with the contact information for the B&B.
 
@@ -283,7 +247,7 @@ The observed behavior suggests that the First Name field only accepts up to 18 c
 
 ---
 
-### BR 17: Inconsistency in Location Name
+### BR 14: Inconsistency in Location Name
 
 **Summary:** There is an inconsistency in the location name provided by the introduction message and the address listed next to the Contact form.
 
@@ -299,7 +263,7 @@ The observed behavior suggests that the First Name field only accepts up to 18 c
 
 ---
 
-### BR 18: Form Submission Failure with Excessively Long Names
+### BR 15: Form Submission Failure with Excessively Long Names
 
 **Summary:** Submitting the Contact Us form with excessively long first and last names results in a blank page, and the form does not recover.
 
