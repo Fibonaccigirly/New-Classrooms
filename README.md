@@ -188,7 +188,7 @@ The test cases cover a diverse range of scenarios, including:
 
 **Actual Behavior:** When selecting mutltiple dates it seems to drop one of the days
 
-**Screenshot:** <img width="700" alt="Screen Shot 2024-01-11 at 3 32 52 PM" src="https://github.com/Fibonaccigirly/New-Classrooms/assets/152340015/eed52d8c-bb99-4124-bebe-f2d49fc8958b">
+<img width="700" alt="Screen Shot 2024-01-11 at 3 32 52 PM" src="https://github.com/Fibonaccigirly/New-Classrooms/assets/152340015/eed52d8c-bb99-4124-bebe-f2d49fc8958b">
 
 
 ---
@@ -212,25 +212,7 @@ The observed behavior suggests that the First Name field only accepts up to 18 c
 
 ---
 
-### BR 12: Incorrect Day Count in Message for One-Week Period
-
-**Summary:** When selecting two or more dates within a one-week period that includes a Saturday, the displayed message about the number of days selected is incorrect.
-
-**Steps to Reproduce:**
-1. Select two or more dates in a one-week period that includes a Saturday (e.g., Fri and Sat or Thu, Fri, and Sat).
-2. Observe the message indicating the number of nights selected.
-
-**Expected Behavior:** The message should accurately reflect the number of nights selected, including the correct count when Saturdays are involved.
-
-**Actual Behavior:** The message displays an incorrect count when selecting dates in a one-week period that includes a Saturday. For example:
-Selecting Fri and Sat displays "1 night(s) selected."
-Selecting Thu, Fri, and Sat displays "2 night(s) selected."
-
-**Note:** Despite the incorrect message, the actual booking correctly reflects the accurate number of nights selected.
-
----
-
-### BR 13: Ability to Select and Book Dates in the Past
+### BR 12: Ability to Select and Book Dates in the Past
 
 **Summary:** The system allows users to select and book dates in the past.
 
@@ -244,9 +226,11 @@ Selecting Thu, Fri, and Sat displays "2 night(s) selected."
 
 **Note:** Ensure that the system validates and restricts the selection of dates to the current date or any future dates. Users should not be able to book accommodations for dates that have already occurred.
 
+<img width="680" alt="Screen Shot 2024-01-11 at 3 35 30 PM" src="https://github.com/Fibonaccigirly/New-Classrooms/assets/152340015/504740fc-dce3-4e4b-85de-053d1ce54b71">
+
 ---
 
-### BR 14: Missing Requirement Information for Message Field
+### BR 13: Missing Requirement Information for Message Field
 
 **Summary:** The Message field lacks information about the character count requirement (between 20 and 2000 characters), leading to form submission failures without prior notification.
 
