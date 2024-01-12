@@ -17,7 +17,7 @@ The automation script, implemented in Python with Selenium, performs the followi
 - Locates the "Contact Us" form and fills it out with various data inputs, including different name variations, email addresses, and messages.
 - Submits the form.
 - Validates the successful completion of the Contact Us form submission by verifying the presence of a confirmation message as the indicator of success. 
-These tests encompasse variations in the form inputs, including positive and negative as well as edge cases such as blank and special characters in input fields.
+These tests encompass variations in the form inputs, including positive and negative as well as edge cases such as blank and special characters in input fields.
 My decision to prioritize the automation of the "Contact Us" form was guided by the principle that even if other features encountered issues, customers could still reach out for assistance. This approach aligns with the notion of ensuring a direct line of communication with users. In essence, it reflects the sentiment: "First thing I'm going to do is make sure the phones work."
 
 ### Testing Tools and Framework
@@ -25,7 +25,7 @@ My decision to prioritize the automation of the "Contact Us" form was guided by 
 For this project, I chose to use Selenium IDE with Python 3.12.0 for several reasons:
 - **Ease of Use:** Selenium IDE provides a user-friendly environment for testing web applications.
 - **Python 3.12.0 Compatibility:** Python is a versatile and widely-used programming language. The compatibility of Selenium IDE with Python 3.12.0 allows for leveraging the strengths of Python, such as readability and a vast array of libraries, in the testing process.
-- **Extensive Community Support:** Selenium has a robust community with a wealth of documentation, forums, and resources. This ensures that any challenges encountered during the coding process can be addressed promptly leveraging community support.
+- **Extensive Community Support:** Selenium has a robust community with a wealth of documentation, forums, and resources. This ensures that any challenges encountered during the coding process can be addressed promptly, leveraging community support.
 - **Cross-Browser Compatibility:** Selenium IDE supports testing across multiple browsers, ensuring that the application's functionality is consistent and reliable for users using different browsers.
 - **Flexibility for Future Enhancements:** Selenium IDE, combined with Python, offers the flexibility to scale and enhance the test suite as the application evolves. The extensibility of Python allows for the integration of additional libraries or frameworks if required.
 By choosing Selenium IDE with Python 3.12.0, I aimed to leverage a toolset that not only facilitates efficient test automation but also aligns with the specific needs and goals of this testing project.
@@ -220,7 +220,7 @@ The observed behavior suggests that the First Name field only accepts up to 18 c
 1. Navigate to the date selection section for booking.
 2. Attempt to select and book dates that are in the past.
 
-**Expected Behavior:** The system should prevent users from selecting and booking dates that have already passed.
+**Expected Behavior:** The system should prevent users from selecting and booking dates in the past.
 
 **Actual Behavior:** Users are able to select and book dates that are in the past.
 
@@ -239,11 +239,11 @@ Today's date is January 11th 2024:
 2. Enter text in the Subject field with the maximum character count.
 3. Submit the form and observe the resulting page layout.
 
-**Expected Behavior:** The layout of the resulting page should accommodate the entered subject text, preventing overlap with other elements.
+**Expected Behavior:** The layout of the resulting page should accommodate the entire subject text, preventing overlap with other elements.
 
 **Actual Behavior:** When using the maximum character count in the Subject field, the subject text spans across the screen, causing overlap with the contact information for the B&B.
 
-**Note:** It is recommended to adjust the layout or provide a mechanism to handle long subject text gracefully, ensuring it does not interfere with other elements on the page. This will enhance the overall presentation and readability of the content.
+**Note:** It is recommended to adjust the layout or provide a mechanism to handle long subject text gracefully, ensuring it doesn't interfere with other elements on the page. This will enhance the overall presentation and readability of the content.
 
 ---
 
@@ -253,7 +253,7 @@ Today's date is January 11th 2024:
 
 **Steps to Reproduce:**
 1. Read the introduction message for location information.
-2. Compare the location name in the introduction message with the address listed next to the Contact form.
+2. Compare the location name in the introduction message with the name in address listed next to the Contact form.
 
 **Expected Behavior:** The location name should be consistent in both the introduction message and the address details.
 
@@ -292,7 +292,7 @@ This project focuses on automating the "Contact Us" form on the homepage using S
 - Selenium WebDriver
 - Visual Studio Code (VS Code)
 - Python 3.12.0
-- 
+
 ### Instructions for Running the Project:
 
 #### Prerequisites:
@@ -325,7 +325,7 @@ To run the automated tests on your local machine, follow these instructions:
 
     - The terminal will display the progress and results of the automated tests.
     - Any encountered errors or exceptions will be logged for further analysis.
-      - Example: 2024-01-11 12:26:55,354 [INFO] Running test variation #1
+    - Example: 2024-01-11 12:26:55,354 [INFO] Running test variation #1
       2024-01-11 12:27:00,943 [INFO] Success message found: Thanks for getting in touch Jane Doe!
 
 #### Notes:
@@ -334,7 +334,6 @@ To run the automated tests on your local machine, follow these instructions:
 - Adjust the script according to your file structure and naming conventions.
 
 By following these instructions, you should be able to run the automated tests successfully on your local machine.
-
 
 
 ## Assumptions and Considerations:
@@ -348,7 +347,7 @@ During the testing process, certain assumptions were made to guide the test scen
   - Empty email:
     - Assumption: The Email field is assumed to be a required field, and an empty email is considered an invalid input.
   - Long email:
-    - Assumption: The application is assumed to handle emails up to the specified maximum character limit, and exceeding this limit may result in an error or truncation.
+    - Assumption: The application is assumed to handle emails up to the specified maximum character limit, and exceeding this limit should fail gracefully.
 
 2. Phone:
 
