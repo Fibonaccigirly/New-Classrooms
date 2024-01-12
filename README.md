@@ -335,10 +335,41 @@ To run the automated tests on your local machine, follow these instructions:
 
 By following these instructions, you should be able to run the automated tests successfully on your local machine.
 
+# New Classrooms Restful Booker Automated Testing
+
+...
+
+## Next Steps
+
+To continue improving the automated testing project, consider the following next steps:
+
+### 1. Implement Comprehensive Reporting
+
+Enhance the testing framework by incorporating a comprehensive reporting mechanism. This should include detailed tracking of the number of test cases that pass and fail. The objective is to provide stakeholders with a clear overview of the testing results. Consider exploring the utilization of Python assert functions to achieve more informative and structured reporting.
+
+### 2. Explore Assert Functions for Improved Reporting
+
+Investigate the integration of Python assert functions to elevate the level of reporting. These functions can contribute to a more detailed and expressive presentation of test outcomes. Aim to create a report that not only indicates the total number of tests run but also breaks down the results into the number of tests that passed and failed. Include detailed error messages for failed tests to facilitate efficient debugging and issue resolution.
+
+### 3. Track Pass/Fail Metrics
+
+In the enhanced reporting, include metrics on the number of tests that successfully passed and those that encountered failures. This granular information will provide valuable insights into the overall health of the testing suite, allowing for targeted improvements in specific areas.
+
+### 4. Provide Detailed Error Messages
+
+Ensure that the reporting mechanism includes detailed error messages for each failed test. This step is crucial for efficient debugging and troubleshooting. A well-crafted error message can significantly expedite the identification and resolution of issues, contributing to a more streamlined testing process.
+
+### 5. Consider Integration with Testing Frameworks
+
+Evaluate the possibility of integrating the testing code with popular testing frameworks or tools. This integration can offer additional features and functionalities for reporting, logging, and result analysis. Explore options that align with the project's requirements and facilitate seamless collaboration among team members.
+
+...
+
 
 ## Assumptions and Considerations:
 
 During the testing process, certain assumptions were made to guide the test scenarios. These assumptions are detailed below:
+ 
 
 1. Email:
 
