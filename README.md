@@ -335,8 +335,6 @@ To run the automated tests on your local machine, follow these instructions:
 
 By following these instructions, you should be able to run the automated tests successfully on your local machine.
 
-# New Classrooms Restful Booker Automated Testing
-
 ...
 
 ## Next Steps
