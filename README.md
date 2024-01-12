@@ -335,11 +335,10 @@ To run the automated tests on your local machine, follow these instructions:
 
 By following these instructions, you should be able to run the automated tests successfully on your local machine.
 
-...
 
 ## Next Steps
 
-To continue improving the automated testing project, consider the following next steps:
+To continue improving the automated testing project, I would consider the following next steps:
 
 ### 1. Implement Comprehensive Reporting
 
@@ -360,8 +359,6 @@ Ensure that the reporting mechanism includes detailed error messages for each fa
 ### 5. Consider Integration with Testing Frameworks
 
 Evaluate the possibility of integrating the testing code with popular testing frameworks or tools. This integration can offer additional features and functionalities for reporting, logging, and result analysis. Explore options that align with the project's requirements and facilitate seamless collaboration among team members.
-
-...
 
 
 ## Assumptions and Considerations:
