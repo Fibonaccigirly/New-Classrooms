@@ -16,9 +16,7 @@ logging.basicConfig(level=logging.INFO,
 
 
 def fill_form_field(driver, field_id, field_value):
-    """ 
-    Fills in a form field
-    """
+    # Fills in fields in the contact form
     try:
         field = driver.find_element(By.ID, field_id)
         field.clear()
